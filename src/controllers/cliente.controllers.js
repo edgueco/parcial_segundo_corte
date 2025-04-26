@@ -3,7 +3,7 @@ import getConnection from "./../db/database.js";
 const postClientes = async (req, res) => {
     let connection;
     try {
-        const { ClienteID, Compania, Contacto,Titulo, Direccion, Ciudad, Regiones, CodigoPostal, Pais, Telefono, Fax } = req.body;
+        const { ClienteID, Compania, Contacto, Titulo, Direccion, Ciudad, Regiones, CodigoPostal, Pais, Telefono, Fax } = req.body;
 
         const cliente = {
             ClienteID,

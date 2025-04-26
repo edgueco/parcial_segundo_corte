@@ -8,6 +8,8 @@ import cors from "cors";
 import empleadosRoutes from "./routes/empleados.routes.js";
 import clientesRoutes from "./routes/clientes.routes.js";
 import productosRoutes from "./routes/productos.routes.js";
+import categoriasRoutes from "./routes/categorias.routes.js";
+
 
 // asignamos a app toda la funcionalidad para mi servidor web
 const app = express();
@@ -25,7 +27,7 @@ app.use(cors());
 
 // app.use("/api/categorias", categoriasRoutes);
 
-
+app.use("/api/categorias", categoriasRoutes);
 app.use("/api/empleados", empleadosRoutes);
 app.use("/api/clientes", clientesRoutes);
 app.use("/api/productos", productosRoutes);
